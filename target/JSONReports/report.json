@@ -1,0 +1,154 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-10T18:00:21.654Z",
+        "line": 3,
+        "name": "Validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4011154300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is open",
+            "match": {
+              "location": "com.training.jwa.GoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 863910500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on google search page",
+            "match": {
+              "location": "com.training.jwa.GoogleSearchSteps.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127078600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters a text in the search box",
+            "match": {
+              "location": "com.training.jwa.GoogleSearchSteps.user_enters_a_text_in_the_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2381268900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hits enter",
+            "match": {
+              "location": "com.training.jwa.GoogleSearchSteps.hits_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44424500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is navigated to search results",
+            "match": {
+              "location": "com.training.jwa.GoogleSearchSteps.user_is_navigated_to_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google functionality",
+    "description": "",
+    "id": "feature-to-test-google-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/mygooglesearch.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-10T18:00:29.207Z",
+        "line": 3,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4160382000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271199500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107797000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42327000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login functionality",
+    "description": "",
+    "id": "feature-to-test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/mylogin.feature",
+    "tags": []
+  }
+]

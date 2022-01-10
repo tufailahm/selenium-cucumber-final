@@ -54,12 +54,4 @@ public class GoogleSearchSteps {
 	    assertTrue(checkResults.contains("results"));
 
 	}
-
-	@After
-	public void done() {
-		System.out.println("closing the browser");
-		driver.close();
-		driver.quit();
-		
-	}
 }
