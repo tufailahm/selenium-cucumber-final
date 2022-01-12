@@ -2,12 +2,17 @@ package com.training.jwa;
 
 import static org.junit.Assert.assertTrue;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,9 +38,15 @@ public class GoogleSearchSteps {
 
 	}
 	@When("user enters a text in the search box")
-	public void user_enters_a_text_in_the_search_box() {
+	public void user_enters_a_text_in_the_search_box() throws IOException {
 		System.out.println("###user enters a text in the search box");
 		driver.findElement(By.name("q")).sendKeys("oneplus");
+		//screen shot
+		//we are converting driver object to take screenshot
+		TakesScreenshot screenshot = ((TakesScreenshot) driver);
+		File sourcefile = screenshot.getScreenshotAs(OutputType.FILE);
+		File destinationFile = new File("h://jwa.png");
+		FileUtils.copyFile(sourcefile, destinationFile);
 
 	}
 	@When("hits enter")

@@ -1,86 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="21.27">
-    <testcase classname="Database test" name="We should be able connect to the database and get the data" time="0.42">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="1.011">
+    <testcase classname="Database test" name="We should be able connect to the database and get the data" time="0.366">
         <system-out><![CDATA[When connection is established using "jdbc:mysql://localhost:3306/revaturejwadb" "com.mysql.jdbc.Driver" "root" and "root".passed
 And I run a select query to get the "product_Name" using "product_Id" to get the data from "products" where 3.passed
 Then I should see the result as "Monitor"...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Database test" name="We should be able connect to the database and get the data 2" time="0.019">
+    <testcase classname="Database test" name="We should be able connect to the database and get the data 2" time="0.012">
         <system-out><![CDATA[When connection is established using "jdbc:mysql://localhost:3306/maybankdb" "com.mysql.jdbc.Driver" "root" and "root".passed
 And I run a select query to get the "Ename" using "EmpId" to get the data from "employee" where 11.passed
 Then I should see the result as "Mohan".....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Database test" name="We should be able connect to the database and get the data 3" time="0.299">
+    <testcase classname="Database test" name="We should be able connect to the database and get the data 3" time="0.261">
         <system-out><![CDATA[When connection is established using "jdbc:postgresql://localhost:5432/postgres" "org.postgresql.Driver" "postgres" and "root".passed
 And I run a select query to get the "first_name" using "id" to get the data from "student" where 1.passed
 Then I should see the result as "Ahmed".....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="feature to test google functionality" name="Validate google search is working" time="9.049">
-        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=97.0.4692.71)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'TUFAILA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7179e40b27ce3ff40bd82a9ab63b1b3b, findElement {using=xpath, value=//*[@id=&quot;result-stats&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\tufai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49370/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7179e40b27ce3ff40bd82a9ab63b1b3b" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given browser is open.......................................................passed
-And user is on google search page...........................................passed
-When user enters a text in the search box...................................passed
-And hits enter..............................................................passed
-Then user is navigated to search results....................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=97.0.4692.71)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'TUFAILA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7179e40b27ce3ff40bd82a9ab63b1b3b, findElement {using=xpath, value=//*[@id="result-stats"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\tufai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49370/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7179e40b27ce3ff40bd82a9ab63b1b3b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.training.jwa.GoogleSearchSteps.user_is_navigated_to_search_results(GoogleSearchSteps.java:53)
-	at ✽.user is navigated to search results(file:///D:/eclipse-work/ltcompany/selenium-cucumber-final/src/test/resources/Features/mygooglesearch.feature:8)
+    <testcase classname="Testing all the Tests" name="Product service test" time="0.012">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I want to write a step with precondition..............................undefined
+And some other precondition.................................................skipped
+When I complete action......................................................skipped
+And some other action.......................................................skipped
+And yet another action......................................................skipped
+Then I validate the outcomes................................................skipped
+And check more outcomes.....................................................skipped
 ]]></failure>
     </testcase>
-    <testcase classname="feature to test login functionality" name="Check login is successful with valid credentials" time="2.528">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters Tufail and 12345...........................................passed
-And clicks on login button..................................................passed
-Then user is navigated to the home page that should contain Tufail..........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test login functionality" name="Check login is successful with valid credentials 2" time="2.724">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters Richard and 12345..........................................passed
-And clicks on login button..................................................passed
-Then user is navigated to the home page that should contain Richard.........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test login functionality" name="Check login is successful with valid credentials 3" time="2.788">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters Neena and 12345............................................passed
-And clicks on login button..................................................passed
-Then user is navigated to the home page that should contain Neena...........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test login functionality" name="Check login is successful with valid credentials 4" time="3.111">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters jay and 12345..............................................passed
-And clicks on login button..................................................passed
-Then user is navigated to the home page that should contain jay.............passed
-]]></system-out>
+    <testcase classname="Testing all the Tests" name="Product repository test" time="0.004">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I want to write a step with precondition..............................undefined
+And some other precondition.................................................skipped
+When I complete action......................................................skipped
+And some other action.......................................................skipped
+And yet another action......................................................skipped
+Then I validate the outcomes................................................skipped
+And check more outcomes.....................................................skipped
+]]></failure>
     </testcase>
 </testsuite>

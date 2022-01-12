@@ -1,5 +1,6 @@
 Feature: Database test
 
+  @databasetest @regression @controllertest
   Scenario Outline: We should be able connect to the database and get the data
     When connection is established using <url> <driver> <username> and <password>
     And I run a select query to get the <columnName> using <queryColumnName> to get the data from <tableName> where <queryColumn>

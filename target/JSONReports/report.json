@@ -3,8 +3,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-11T16:49:20.250Z",
-        "line": 10,
+        "start_timestamp": "2022-01-12T15:52:36.794Z",
+        "line": 11,
         "name": "We should be able connect to the database and get the data",
         "description": "",
         "id": "database-test;we-should-be-able-connect-to-the-database-and-get-the-data;|;2",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 293006200,
+              "duration": 267002500,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "connection is established using \"jdbc:mysql://localhost:3306/revaturejwadb\" \"com.mysql.jdbc.Driver\" \"root\" and \"root\"",
             "match": {
               "arguments": [
@@ -43,10 +43,10 @@
           },
           {
             "result": {
-              "duration": 4000800,
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I run a select query to get the \"product_Name\" using \"product_Id\" to get the data from \"products\" where 3",
             "match": {
               "arguments": [
@@ -73,10 +73,10 @@
           },
           {
             "result": {
-              "duration": 5000200,
+              "duration": 3000100,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I should see the result as \"Monitor\"",
             "match": {
               "arguments": [
@@ -89,11 +89,22 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@databasetest"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@controllertest"
+          }
         ]
       },
       {
-        "start_timestamp": "2022-01-11T16:49:20.687Z",
-        "line": 11,
+        "start_timestamp": "2022-01-12T15:52:37.174Z",
+        "line": 12,
         "name": "We should be able connect to the database and get the data",
         "description": "",
         "id": "database-test;we-should-be-able-connect-to-the-database-and-get-the-data;|;3",
@@ -102,10 +113,10 @@
         "steps": [
           {
             "result": {
-              "duration": 13996200,
+              "duration": 9001200,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "connection is established using \"jdbc:mysql://localhost:3306/maybankdb\" \"com.mysql.jdbc.Driver\" \"root\" and \"root\"",
             "match": {
               "arguments": [
@@ -132,10 +143,10 @@
           },
           {
             "result": {
-              "duration": 999200,
+              "duration": 1003100,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I run a select query to get the \"Ename\" using \"EmpId\" to get the data from \"employee\" where 11",
             "match": {
               "arguments": [
@@ -162,10 +173,10 @@
           },
           {
             "result": {
-              "duration": 1001800,
+              "duration": 997500,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I should see the result as \"Mohan\"",
             "match": {
               "arguments": [
@@ -178,11 +189,22 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@databasetest"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@controllertest"
+          }
         ]
       },
       {
-        "start_timestamp": "2022-01-11T16:49:20.717Z",
-        "line": 12,
+        "start_timestamp": "2022-01-12T15:52:37.193Z",
+        "line": 13,
         "name": "We should be able connect to the database and get the data",
         "description": "",
         "id": "database-test;we-should-be-able-connect-to-the-database-and-get-the-data;|;4",
@@ -191,10 +213,10 @@
         "steps": [
           {
             "result": {
-              "duration": 276997100,
+              "duration": 240999200,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "connection is established using \"jdbc:postgresql://localhost:5432/postgres\" \"org.postgresql.Driver\" \"postgres\" and \"root\"",
             "match": {
               "arguments": [
@@ -221,10 +243,10 @@
           },
           {
             "result": {
-              "duration": 18998800,
+              "duration": 16002200,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I run a select query to get the \"first_name\" using \"id\" to get the data from \"student\" where 1",
             "match": {
               "arguments": [
@@ -253,7 +275,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I should see the result as \"Ahmed\"",
             "match": {
               "arguments": [
@@ -265,6 +287,17 @@
               "location": "com.training.jwa.DatabaseSteps.i_should_see_the_result_as(java.lang.String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@databasetest"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@controllertest"
           }
         ]
       }
@@ -280,394 +313,171 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-11T16:49:21.023Z",
-        "line": 3,
-        "name": "Validate google search is working",
+        "start_timestamp": "2022-01-12T15:52:37.494Z",
+        "line": 5,
+        "name": "Product service test",
         "description": "",
-        "id": "feature-to-test-google-functionality;validate-google-search-is-working",
+        "id": "testing-all-the-tests;product-service-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4189146900,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 4,
-            "name": "browser is open",
-            "match": {
-              "location": "com.training.jwa.GoogleSearchSteps.browser_is_open()"
-            },
+            "line": 6,
+            "name": "I want to write a step with precondition",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1323996500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on google search page",
-            "match": {
-              "location": "com.training.jwa.GoogleSearchSteps.user_is_on_google_search_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 154999100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters a text in the search box",
-            "match": {
-              "location": "com.training.jwa.GoogleSearchSteps.user_enters_a_text_in_the_search_box()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3279872800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
-            "name": "hits enter",
-            "match": {
-              "location": "com.training.jwa.GoogleSearchSteps.hits_enter()"
-            },
+            "name": "some other precondition",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d97.0.4692.71)\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027TUFAILA\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7179e40b27ce3ff40bd82a9ab63b1b3b, findElement {using\u003dxpath, value\u003d//*[@id\u003d\"result-stats\"]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\\Users\\tufai\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49370/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7179e40b27ce3ff40bd82a9ab63b1b3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat com.training.jwa.GoogleSearchSteps.user_is_navigated_to_search_results(GoogleSearchSteps.java:53)\r\n\tat ✽.user is navigated to search results(file:///D:/eclipse-work/ltcompany/selenium-cucumber-final/src/test/resources/Features/mygooglesearch.feature:8)\r\n",
-              "duration": 67012200,
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 8,
-            "name": "user is navigated to search results",
-            "match": {
-              "location": "com.training.jwa.GoogleSearchSteps.user_is_navigated_to_search_results()"
+            "name": "I complete action",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
+            "line": 9,
+            "name": "some other action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "yet another action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I validate the outcomes",
+            "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "check more outcomes",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@servicetest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-12T15:52:37.521Z",
+        "line": 25,
+        "name": "Product repository test",
+        "description": "",
+        "id": "testing-all-the-tests;product-repository-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "I want to write a step with precondition",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "some other precondition",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I complete action",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "some other action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "yet another action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I validate the outcomes",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "check more outcomes",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@repositorytest"
           }
         ]
       }
     ],
-    "name": "feature to test google functionality",
-    "description": "",
-    "id": "feature-to-test-google-functionality",
+    "name": "Testing all the Tests",
+    "description": "  I want to use this template for my feature file",
+    "id": "testing-all-the-tests",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/mygooglesearch.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2022-01-11T16:49:30.098Z",
-        "line": 11,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2192059800,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 202999800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enters Tufail and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Tufail",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 23
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 75999800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks on login button",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41002100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user is navigated to the home page that should contain Tufail",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Tufail",
-                  "offset": 55
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-11T16:49:32.634Z",
-        "line": 12,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2374350300,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 209001500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enters Richard and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Richard",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 24
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 97999500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks on login button",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39001800,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user is navigated to the home page that should contain Richard",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Richard",
-                  "offset": 55
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-11T16:49:35.363Z",
-        "line": 13,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2390003800,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 248001100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enters Neena and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Neena",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 22
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 96001500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks on login button",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49014300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user is navigated to the home page that should contain Neena",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Neena",
-                  "offset": 55
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-11T16:49:38.157Z",
-        "line": 14,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2713999200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 268000500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enters jay and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "jay",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 20
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 80000700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks on login button",
-            "match": {
-              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45998200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user is navigated to the home page that should contain jay",
-            "match": {
-              "arguments": [
-                {
-                  "val": "jay",
-                  "offset": 55
-                }
-              ],
-              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "feature to test login functionality",
-    "description": "",
-    "id": "feature-to-test-login-functionality",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/mylogin.feature",
+    "uri": "file:src/test/resources/Features/tagsdemo.feature",
     "tags": []
   }
 ]

@@ -48,6 +48,8 @@ public class LoginSteps {
 		  System.out.println("###clicks on login button");
 			//driver.findElement(By.id("login")).click();
 		  loginPage_PageFactory.clickLogin();
+		  //screen shot
+		  
 	}
 
 	@Then("^user is navigated to the home page that should contain (.*)$")
@@ -59,9 +61,7 @@ public class LoginSteps {
 			assertTrue(check.contains("Hello "+message+", let's complete the test form:"));
 	}
 	
-	@After
-	public void close() {
-		driver.close();
-		driver.quit();
-	}
+	/*
+	 * @After public void close() { driver.close(); driver.quit(); }
+	 */
 }

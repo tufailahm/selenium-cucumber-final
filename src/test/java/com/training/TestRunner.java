@@ -12,7 +12,9 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"com.training.jwa"},
 		plugin = { "pretty" , "html:target/HTMLReports/index.html",
 				"json:target/JSONReports/report.json",
-				"junit:target/XMLReports/report.xml" }
+				"junit:target/XMLReports/report.xml" },
+		//tags =  "@controllertest and @databasetest"
+		tags =  "@databasetest or @servicetest or @repositorytest"
 		)
 public class TestRunner {
 
