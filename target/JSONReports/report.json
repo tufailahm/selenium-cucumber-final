@@ -3,7 +3,284 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-10T18:00:21.654Z",
+        "start_timestamp": "2022-01-11T16:49:20.250Z",
+        "line": 10,
+        "name": "We should be able connect to the database and get the data",
+        "description": "",
+        "id": "database-test;we-should-be-able-connect-to-the-database-and-get-the-data;|;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 293006200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "connection is established using \"jdbc:mysql://localhost:3306/revaturejwadb\" \"com.mysql.jdbc.Driver\" \"root\" and \"root\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jdbc:mysql://localhost:3306/revaturejwadb\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"com.mysql.jdbc.Driver\"",
+                  "offset": 76
+                },
+                {
+                  "val": "\"root\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"root\"",
+                  "offset": 111
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.connection_is_established_using_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I run a select query to get the \"product_Name\" using \"product_Id\" to get the data from \"products\" where 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product_Name\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"product_Id\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"products\"",
+                  "offset": 87
+                },
+                {
+                  "val": "3",
+                  "offset": 104
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.i_run_a_select_query_to_get_the_using_to_get_the_data_from_where(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see the result as \"Monitor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Monitor\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.i_should_see_the_result_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-11T16:49:20.687Z",
+        "line": 11,
+        "name": "We should be able connect to the database and get the data",
+        "description": "",
+        "id": "database-test;we-should-be-able-connect-to-the-database-and-get-the-data;|;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13996200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "connection is established using \"jdbc:mysql://localhost:3306/maybankdb\" \"com.mysql.jdbc.Driver\" \"root\" and \"root\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jdbc:mysql://localhost:3306/maybankdb\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"com.mysql.jdbc.Driver\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"root\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"root\"",
+                  "offset": 107
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.connection_is_established_using_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I run a select query to get the \"Ename\" using \"EmpId\" to get the data from \"employee\" where 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ename\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"EmpId\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"employee\"",
+                  "offset": 75
+                },
+                {
+                  "val": "11",
+                  "offset": 92
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.i_run_a_select_query_to_get_the_using_to_get_the_data_from_where(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see the result as \"Mohan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mohan\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.i_should_see_the_result_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-11T16:49:20.717Z",
+        "line": 12,
+        "name": "We should be able connect to the database and get the data",
+        "description": "",
+        "id": "database-test;we-should-be-able-connect-to-the-database-and-get-the-data;|;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 276997100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "connection is established using \"jdbc:postgresql://localhost:5432/postgres\" \"org.postgresql.Driver\" \"postgres\" and \"root\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jdbc:postgresql://localhost:5432/postgres\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"org.postgresql.Driver\"",
+                  "offset": 76
+                },
+                {
+                  "val": "\"postgres\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"root\"",
+                  "offset": 115
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.connection_is_established_using_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18998800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I run a select query to get the \"first_name\" using \"id\" to get the data from \"student\" where 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"first_name\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"id\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"student\"",
+                  "offset": 77
+                },
+                {
+                  "val": "1",
+                  "offset": 93
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.i_run_a_select_query_to_get_the_using_to_get_the_data_from_where(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see the result as \"Ahmed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ahmed\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.training.jwa.DatabaseSteps.i_should_see_the_result_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Database test",
+    "description": "",
+    "id": "database-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/databasetest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-11T16:49:21.023Z",
         "line": 3,
         "name": "Validate google search is working",
         "description": "",
@@ -13,7 +290,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4011154300,
+              "duration": 4189146900,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +302,7 @@
           },
           {
             "result": {
-              "duration": 863910500,
+              "duration": 1323996500,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +314,7 @@
           },
           {
             "result": {
-              "duration": 127078600,
+              "duration": 154999100,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +326,7 @@
           },
           {
             "result": {
-              "duration": 2381268900,
+              "duration": 3279872800,
               "status": "passed"
             },
             "line": 7,
@@ -61,8 +338,9 @@
           },
           {
             "result": {
-              "duration": 44424500,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d97.0.4692.71)\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027TUFAILA\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7179e40b27ce3ff40bd82a9ab63b1b3b, findElement {using\u003dxpath, value\u003d//*[@id\u003d\"result-stats\"]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\\Users\\tufai\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49370/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7179e40b27ce3ff40bd82a9ab63b1b3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat com.training.jwa.GoogleSearchSteps.user_is_navigated_to_search_results(GoogleSearchSteps.java:53)\r\n\tat ✽.user is navigated to search results(file:///D:/eclipse-work/ltcompany/selenium-cucumber-final/src/test/resources/Features/mygooglesearch.feature:8)\r\n",
+              "duration": 67012200,
+              "status": "failed"
             },
             "line": 8,
             "name": "user is navigated to search results",
@@ -85,17 +363,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-10T18:00:29.207Z",
-        "line": 3,
+        "start_timestamp": "2022-01-11T16:49:30.098Z",
+        "line": 11,
         "name": "Check login is successful with valid credentials",
         "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4160382000,
+              "duration": 2192059800,
               "status": "passed"
             },
             "line": 4,
@@ -107,19 +385,29 @@
           },
           {
             "result": {
-              "duration": 271199500,
+              "duration": 202999800,
               "status": "passed"
             },
             "line": 5,
-            "name": "user enters username and password",
+            "name": "user enters Tufail and 12345",
             "match": {
-              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password()"
+              "arguments": [
+                {
+                  "val": "Tufail",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 23
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 107797000,
+              "duration": 75999800,
               "status": "passed"
             },
             "line": 6,
@@ -131,13 +419,244 @@
           },
           {
             "result": {
-              "duration": 42327000,
+              "duration": 41002100,
               "status": "passed"
             },
             "line": 7,
-            "name": "user is navigated to the home page",
+            "name": "user is navigated to the home page that should contain Tufail",
             "match": {
-              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page()"
+              "arguments": [
+                {
+                  "val": "Tufail",
+                  "offset": 55
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-11T16:49:32.634Z",
+        "line": 12,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2374350300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 209001500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters Richard and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Richard",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 24
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97999500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39001800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to the home page that should contain Richard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Richard",
+                  "offset": 55
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-11T16:49:35.363Z",
+        "line": 13,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2390003800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 248001100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters Neena and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Neena",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 22
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96001500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49014300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to the home page that should contain Neena",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Neena",
+                  "offset": 55
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-11T16:49:38.157Z",
+        "line": 14,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;|;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2713999200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 268000500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters jay and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jay",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 20
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80000700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "com.training.jwa.LoginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45998200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to the home page that should contain jay",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jay",
+                  "offset": 55
+                }
+              ],
+              "location": "com.training.jwa.LoginSteps.user_is_navigated_to_the_home_page(java.lang.String)"
             },
             "keyword": "Then "
           }
